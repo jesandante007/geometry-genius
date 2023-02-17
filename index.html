@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Genius</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!----------------------- navbar start ----------------------->
+    <header class="lg:mx-10 lg:mt-10">
+      <div class="navbar bg-sky-100 rounded-md px-10">
+        <div class="navbar-start">
+          <a class="text-4xl font-bold"
+            >Interactive <br />
+            <span class="text-3xl font-medium">Geometry Genius</span></a
+          >
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-info px-10 text-white">Blog</a>
+        </div>
+      </div>
+    </header>
+    <!----------------------- navbar end ----------------------->
+
+    <!----------------------- main section start ----------------------->
+    <main class="mx-2 lg:mx-10 mt-4 lg:my-10 lg:flex gap-5">
+      <section class="grid lg:grid-cols-3 gap-5 lg:w-3/4">
+        <!----------------------- card start ----------------------->
+
+        <!----------------------- card end ----------------------->
+        <div class="card w-full border">
+          <figure class="px-10 pt-10">
+            <img src="/images/triangle.png" alt="triangle" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-2xl font-bold">Triangle</h2>
+            <p>Area (A) = 0.5 X b X h</p>
+            <div>
+              <label class="mr-4">
+                <input
+                  type="text"
+                  placeholder="b"
+                  class="input bg-slate-200 input-sm/4 w-2/5 mr-1"
+                />cm
+              </label>
+              <label>
+                <input
+                  type="text"
+                  placeholder="h"
+                  class="input bg-slate-200 input-sm/4 w-2/5 mr-1"
+                />cm
+              </label>
+            </div>
+            <div class="card-actions w-full mt-4">
+              <button class="btn btn-info text-white w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!----------------------- card end ----------------------->
+
+        <!----------------------- card start ----------------------->
+        <div class="card w-full border">
+          <figure class="px-10 pt-10">
+            <img src="/images/rectangle.png" alt="triangle" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-2xl font-bold">Rectangle</h2>
+            <p>Area (A) = w X l</p>
+            <div>
+              <label class="mr-4">
+                <input
+                  type="text"
+                  placeholder="w"
+                  class="input bg-slate-200 input-sm/4 w-2/5 mr-1"
+                />cm
+              </label>
+              <label>
+                <input
+                  type="text"
+                  placeholder="l"
+                  class="input bg-slate-200 input-sm/4 w-2/5 mr-1"
+                />cm
+              </label>
+            </div>
+            <div class="card-actions w-full mt-4">
+              <button class="btn btn-info text-white w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!----------------------- card end ----------------------->
+
+        <!----------------------- card start ----------------------->
+        <div class="card w-full border">
+          <figure class="px-10 pt-10">
+            <img src="/images/parallelogram.png" alt="triangle" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-2xl font-bold">Parallelogram</h2>
+            <p>Area (A) = b X h</p>
+            <div>
+              <label class="mr-4">
+                <input
+                  type="text"
+                  placeholder="b"
+                  class="input bg-slate-200 input-sm/4 w-2/5 mr-1"
+                />cm
+              </label>
+              <label>
+                <input
+                  type="text"
+                  placeholder="h"
+                  class="input bg-slate-200 input-sm/4 w-2/5 mr-1"
+                />cm
+              </label>
+            </div>
+            <div class="card-actions w-full mt-4">
+              <button class="btn btn-info text-white w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!----------------------- card end ----------------------->
+
+        <!----------------------- card start ----------------------->
+        <div class="card w-full border">
+          <figure class="px-10 pt-10">
+            <img src="/images/rhombus.png" alt="rhombus" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-2xl font-bold">Rhombus</h2>
+            <p>Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+            <div>
+              <label class="mr-4">
+                <input
+                  type="text"
+                  placeholder="d1"
+                  class="input bg-slate-200 input-sm/4 w-2/5 mr-1"
+                />cm
+              </label>
+              <label>
+                <input
+                  type="text"
+                  placeholder="d2"
+                  class="input bg-slate-200 input-sm/4 w-2/5 mr-1"
+                />cm
+              </label>
+            </div>
+            <div class="card-actions w-full mt-4">
+              <button class="btn btn-info text-white w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!----------------------- card end ----------------------->
+
+        <!----------------------- card start ----------------------->
+        <div class="card w-full border">
+          <figure class="px-10 pt-10">
+            <img src="/images/pentagon.png" alt="pentagon" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-2xl font-bold">Pentagon</h2>
+            <p>Area (A) = 0.5 X p X b</p>
+            <div>
+              <label class="mr-4">
+                <input
+                  type="text"
+                  placeholder="p"
+                  class="input bg-slate-200 input-sm/4 w-2/5 mr-1"
+                />cm
+              </label>
+              <label>
+                <input
+                  type="text"
+                  placeholder="b"
+                  class="input bg-slate-200 input-sm/4 w-2/5 mr-1"
+                />cm
+              </label>
+            </div>
+            <div class="card-actions w-full mt-4">
+              <button class="btn btn-info text-white w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!----------------------- card end ----------------------->
+
+        <!----------------------- card start ----------------------->
+        <div class="card w-full border">
+          <figure class="px-10 pt-10">
+            <img src="/images/ellipse.png" alt="ellipse" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-2xl font-bold">Ellipse</h2>
+            <p>Area (A) = <span>&#8508</span>ab</p>
+            <div>
+              <label class="mr-4">
+                <input
+                  type="text"
+                  placeholder="a"
+                  class="input bg-slate-200 input-sm/4 w-2/5 mr-1"
+                />cm
+              </label>
+              <label>
+                <input
+                  type="text"
+                  placeholder="b"
+                  class="input bg-slate-200 input-sm/4 w-2/5 mr-1"
+                />cm
+              </label>
+            </div>
+            <div class="card-actions w-full mt-4">
+              <button class="btn btn-info text-white w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!----------------------- card end ----------------------->
+      </section>
+
+      <!----------------------- calculation section start ----------------------->
+      <aside class="border rounded-lg lg:w-1/4">
+        <h2 class="text-3xl font-medium underline text-center mt-7">
+          Area Calculation
+        </h2>
+        <div class="overflow-x-auto mt-5">
+          <table class="table w-full">
+            <!-- head -->
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Result</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </aside>
+      <!----------------------- calculation section end ----------------------->
+    </main>
+    <!----------------------- main section end ----------------------->
+  </body>
+</html>
