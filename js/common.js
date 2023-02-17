@@ -1,12 +1,8 @@
-const btnTriangle = document.getElementById('btn-triangle');
-const btnRectangle = document.getElementById('btn-rectangle');
-const btnParallelogram  = document.getElementById('btn-parallelogram');
-const btnRhombus = document.getElementById('btn-rhombus');
-const btnPentagon = document.getElementById('btn-pentagon');
-const btnEllipse = document.getElementById('btn-ellipse');
+// counter for maintain serial
 let serial = 0;
 
-const getData = function(e, threeValue){
+// get input value, validate the value & calculate result
+const getData = function(e, formula){
     const name = e.target.parentNode.parentNode.children[0].innerText;
     const firstValue = e.target.parentNode.parentNode.children[2].children[0].children[0].value;
     const secondValue = e.target.parentNode.parentNode.children[2].children[1].children[0].value;
@@ -15,17 +11,24 @@ const getData = function(e, threeValue){
     }else{
         serial += 1;
         let result;
-        if(threeValue){
-            result = 0.5 * parseFloat(firstValue) * parseFloat(secondValue);
-        }else if(!threeValue){
-            result = parseFloat(firstValue) * parseFloat(secondValue);
-        }else{
-            result = 3.14 * parseFloat(firstValue) * parseFloat(secondValue);
+        if(formula === 0.5){
+            result = parseFloat((0.5 * parseFloat(firstValue) * parseFloat(secondValue)).toFixed(2));
+        }else if(formula === 1){
+            result = parseFloat((parseFloat(firstValue) * parseFloat(secondValue)).toFixed(2));
+        }else if(formula === 3.14){
+            result = parseFloat((3.14 * parseFloat(firstValue) * parseFloat(secondValue)).toFixed(2));
         }
-        showResult(serial, name, result);
+        // showResult(serial, name, result);
+        const data = {
+            serial : serial,
+            name : name,
+            result : result
+        }
+        return data;
     }
 }
 
+// show calculated value in the Area Calculation table 
 const showResult = function(serial, name, result){
     const tbody = document.getElementById('tbody');
     const tr = document.createElement('tr');
