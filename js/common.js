@@ -35,10 +35,40 @@ const showResult = function(serial, name, result){
     tr.innerHTML = `
         <td>${serial}</td>
         <td>${name}</td>
-        <td>${result}cm<sup>2</sup></td>
-        <td><button class="btn btn-sm btn-info">Convert to m<sup>2</sup></button></td>
+        <td><span>${result}</span><span>cm</span><sup>2</sup></td>
+        <td><button class="btn-sm btn-info text-white font-medium rounded-lg convert">
+        To m<sup>2</sup></button></td>
+        <td>
+          <button class="btn btn-outline btn-error btn-sm delete">&#10060</button>
+        </td>
     `;
     tbody.appendChild(tr);
+    tr.addEventListener('click', function(e){
+        const convertBtn = e.target.classList.contains('convert')
+        const deleteBtn = e.target.classList.contains('delete');
+        if(convertBtn){
+            convert(e);
+        }
+        if(deleteBtn){
+            e.target.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode);
+        }
+    })
+}
+
+// convert cm(square) to m(square)
+const convert = function(e){
+    const resultElement = e.target.parentNode.parentNode.children[2].children[0];
+    const resultString = resultElement.innerText;
+    const newResult = parseFloat(resultString) / 10000;
+    resultElement.innerText = newResult;
+    const cm = e.target.parentNode.parentNode.children[2].children[1];
+    cm.innerText = 'm';
+    e.target.setAttribute('disabled', true)
+}
+
+// delete current row
+const deleteData = function(e){
+
 }
 
 // random color generator 
