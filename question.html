@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="container px-3 mx-auto">
+      <h1 class="text-7xl text-center font-semibold text-cyan-500 mt-5">
+        Question
+      </h1>
+      <ol class="list-decimal mt-10">
+        <li class="text-xl">What is dom? What is the purpose of dom?</li>
+        <p class="border rounded-lg py-3 px-7">
+          <span class="font-medium">Answer:</span> DOM means Document Object
+          Model. Through DOM we can manipulate web page. DOM is an object tree
+          of a html document.It's an programming interface for web documents. By
+          this interface using JavaScript we can manipulate, change element, add
+          or remove attributes, change style & so many things.
+        </p>
+        <li class="text-xl mt-10">How to select elements from dom?</li>
+        <p class="border rounded-lg py-3 px-7">
+          <span class="font-medium">Answer:</span> We can select dom elements in
+          many ways. There are so many methods and tricks to grab elements or
+          nodes from dom. We use then as per our needs. Some methods are given:
+          <br />
+          <span class="font-medium">document.getElementById()</span><br />
+          <span class="font-medium">getElementsByTagName()</span><br />
+          <span class="font-medium">getElementsByClassName()</span><br />
+          <span class="font-medium">querySelector()</span><br />
+          <span class="font-medium">querySelectorAll</span><br />
+        </p>
+        <li class="text-xl mt-10">What is event bubble?</li>
+        <div class="border rounded-lg py-3 px-7 lg:flex">
+          <p>Answer: Event bubble is a concept of DOM. Let's say there are three
+            event inside one another. So if the child event happens then it's
+            parent event and grand parent event automatically happen. If parent
+            event happens it's parent will automatically happen. This is like
+            bubble in the deep water and it's raising up. So the bubbling concept
+            is similar to that, event will always raising up to it's ancestors</p>
+            <img src="images/event-order-bubbling.svg">
+        </div>
+        <li class="text-xl mt-10">What is callback function?</li>
+        <p class="border rounded-lg py-3 px-7">Answer: Callback function is a function which is passed as a parameter of another function's. When main function's work done then it execute callback function. Usually callback function uses when synchronous execution needed. Because JavaScript is asynchronous, means doesn't wait for a function to to execute it's next but invoked immediately. So where synchronous behavior need use callback function</p>
+      </ol>
+    </main>
+  </body>
+</html>

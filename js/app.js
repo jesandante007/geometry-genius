@@ -5,6 +5,7 @@ const btnParallelogram  = document.getElementById('btn-parallelogram');
 const btnRhombus = document.getElementById('btn-rhombus');
 const btnPentagon = document.getElementById('btn-pentagon');
 const btnEllipse = document.getElementById('btn-ellipse');
+const btnBlog = document.getElementById('blog');
 
 // triangle event handler
 btnTriangle.addEventListener('click', function(e){
@@ -45,6 +46,11 @@ btnEllipse.addEventListener('click', function(e){
     const formula = 3.14;
     const data = getData(e, formula);
     showResult(data.serial, data.name, data.result);
+})
+
+// blog event handler
+btnBlog.addEventListener('click', function(){
+    location.href = 'question.html';
 })
 
 // apply random color to cards body
