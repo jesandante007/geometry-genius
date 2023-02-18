@@ -46,3 +46,12 @@ btnEllipse.addEventListener('click', function(e){
     const data = getData(e, formula);
     showResult(data.serial, data.name, data.result);
 })
+
+// apply random color to cards body
+const cards = document.getElementsByClassName('card');
+for(const card of cards){
+    card.addEventListener('mouseover', function(){
+        const rgba = randomColor();
+        card.style.backgroundColor = rgba;
+    })
+}

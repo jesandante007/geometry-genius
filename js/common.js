@@ -40,3 +40,13 @@ const showResult = function(serial, name, result){
     `;
     tbody.appendChild(tr);
 }
+
+// random color generator 
+ const randomColor = function(){
+    const r = Math.round(Math.random() * 256);
+    const g = Math.round(Math.random() * 256);
+    const b = Math.round(Math.random() * 256);
+    const a = Math.random();
+    const rgba = `rgb(${r}, ${g}, ${b}, ${a})`;
+    return rgba;
+}
